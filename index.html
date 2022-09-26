@@ -15,7 +15,7 @@
 
 <body>
     <div class="container">
-        <div class="calc-container">
+        <div id="calc-container">
             <h2>Caculadora de IMC</h2>
             <form id="imc-form">
                 <div class="form-inputs">
@@ -25,7 +25,7 @@
                             type="text"
                             name="height" 
                             id="height" 
-                            placeholder="Ex: 1,75"
+                            placeholder="Ex: 1,75 cm"
                         />
                         <div class="form-control">
                             <label for="weigth">Peso:</label>
@@ -33,7 +33,7 @@
                                 type="text"
                                 name="weigth" 
                                 id="weigth" 
-                                placeholder="Ex: 70,2"
+                                placeholder="Ex: 70,2 kg"
                             />
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                 </div>
             </form>
         </div>
-        <div id="result-container" class="hide">
+        <div id="result-container" class="hide" >
             <p id="imc-number">Seu IMC: <span></span></p>
             <p id="imc-info">Sua situação <span></span></p>
             <h3>Confira as Classificações</h3>
