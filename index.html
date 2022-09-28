@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC JS</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/script.js"></script>
+    <script src="scripts/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
@@ -26,26 +26,28 @@
                             name="height" 
                             id="height" 
                             placeholder="Ex: 1,75 cm"
+                            maxlength="4"
                         />
                         <div class="form-control">
-                            <label for="weigth">Peso:</label>
+                            <label for="weight">Peso:</label>
                             <input 
                                 type="text"
-                                name="weigth" 
-                                id="weigth" 
+                                name="weight" 
+                                id="weight" 
                                 placeholder="Ex: 70,2 kg"
+                                maxlength="4"
                             />
                         </div>
                     </div>
                 </div>
                 <div class="action-control">
-                    <button id="cal-btn">Calcular</button>
+                    <button id="calc-btn">Calcular</button>
                     <button id="clear-btn">Limpar</button>
                 
                 </div>
             </form>
         </div>
-        <div id="result-container" class="hide" >
+        <div id="result-container" class="hide"  >
             <p id="imc-number">Seu IMC: <span></span></p>
             <p id="imc-info">Sua situação <span></span></p>
             <h3>Confira as Classificações</h3>
